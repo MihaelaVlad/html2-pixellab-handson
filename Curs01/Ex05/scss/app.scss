@@ -1,0 +1,68 @@
+$brand-main: red;
+$brand-secondary: purple;
+$brand-tertiary: green;
+$brand-mark: magenta;
+$brand-light: lightcoral;
+$brand-neutral: pink;
+
+ul {
+  a {
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: none;
+      color: red;
+    }
+
+    &:active {
+      color: purple;
+    }
+
+    &:visited {
+      color: green;
+    }
+  }
+}
+
+.para-short {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.para {
+  padding: 10px 20px;
+}
+
+.reverse {
+  .para-short {
+    width: 100%;
+    padding: 10px 20px;
+  }
+
+  .para {
+    width: 50%;
+    padding: 0;
+  }
+}
+
+ol {
+  a {
+    &:hover {
+      color: $brand-mark;
+    }
+
+    &:active {
+      color: $brand-neutral;
+    }
+
+    &:visited {
+      color: $brand-light;
+    }
+  }
+}
+
+.all-visited {
+  a {
+    text-decoration: line-through;
+  }
+}
