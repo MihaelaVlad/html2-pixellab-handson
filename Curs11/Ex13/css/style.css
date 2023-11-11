@@ -1,4 +1,4 @@
-/* can't touch this 🔨 */
+/* please do not modify this code */
 .grid-item {
   display: flex;
   align-items: center;
@@ -21,16 +21,23 @@
   background-color: lightsalmon;
 }
 
-/* can't touch this 🔨 */
+/* please do not modify this code */
+
+body {
+  margin: 0;
+  padding: 0;
+}
 
 .grid-container {
+  height: 100%;
   display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
   grid-template-areas:
     'header header header header'
     'sidebar . content content'
     'sidebar . content content'
     'footer footer footer footer';
-  max-width: 1920px;
+  max-width: 1280px;
   width: 100%;
   margin: 0 auto;
 }
